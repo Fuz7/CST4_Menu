@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className='w-full min-h-[100vh] bg-black'>
-   
+      <p className='text-2xl font-SpecialElite text-white'>Menu</p>
     </div>
   )
 }
