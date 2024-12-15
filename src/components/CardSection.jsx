@@ -14,21 +14,22 @@ export default function CardSection() {
   return (
     <section className="flex px-[80px] justify-evenly w-full">
       <Card
-        imgSrc={theFool}
-        name={"Dionaldo"}
-        color={"#FF9759"}
-        cardLogo={dionaldologo}
-        title={"Tower Of Hanoi"}
-        link={"https://tower-of-hanoi-ecru.vercel.app/"}
+        imgSrc={theEmperor}
+        name={"Bagiuo"}
+        color={"#7ED9D4"}
+        cardLogo={baguiologo}
+        title={"DFA/NFA"}
+        link={"https://fuz7.github.io/DFA_NFA/"}
       />
-
-      <Card
-        imgSrc={theMagician}
-        name={"Nerosa"}
-        color={"#F3C7C7"}
-        cardLogo={nerosalogo}
-        title={"Turing Machine"}
-        link={"https://fuz7.github.io/turingMachine/"}
+       <Card
+        imgSrc={theHierophant}
+        name={"Macabenta"}
+        color={"#76D196"}
+        cardLogo={macabentalogo}
+        title={"PDA"}
+        link={
+          "https://cheezypotatoes.github.io/Deterministic-PushDown-Automata-Project/"
+        }
       />
 
       <Card
@@ -39,26 +40,27 @@ export default function CardSection() {
         title={"CFG"}
         link={"https://fuz7.github.io/CFG/"}
       />
-
       <Card
-        imgSrc={theEmperor}
-        name={"Bagiuo"}
-        color={"#7ED9D4"}
-        cardLogo={baguiologo}
-        title={"DFA/NFA"}
-        link={"https://fuz7.github.io/DFA_NFA/"}
+        imgSrc={theFool}
+        name={"Dionaldo"}
+        color={"#FF9759"}
+        cardLogo={dionaldologo}
+        title={"Tower Of Hanoi"}
+        link={"https://tower-of-hanoi-ecru.vercel.app/"}
+      />
+      <Card
+        imgSrc={theMagician}
+        name={"Nerosa"}
+        color={"#F3C7C7"}
+        cardLogo={nerosalogo}
+        title={"Turing Machine"}
+        link={"https://fuz7.github.io/turingMachine/"}
       />
 
-      <Card
-        imgSrc={theHierophant}
-        name={"Macabenta"}
-        color={"#76D196"}
-        cardLogo={macabentalogo}
-        title={"PDA"}
-        link={
-          "https://cheezypotatoes.github.io/Deterministic-PushDown-Automata-Project/"
-        }
-      />
+
+ 
+
+   
     </section>
   );
 }
