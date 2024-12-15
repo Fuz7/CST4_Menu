@@ -2,7 +2,7 @@ import TextSection from './TextSection';
 import { motion } from "motion/react";
 import { useState } from "react";
 
-export default function Card({ imgSrc,name, color,cardLogo,title }) {
+export default function Card({ imgSrc,name, color,cardLogo,title,link }) {
   const [isHovered,setIsHovered] = useState(false)
   const letterArray = name.split('')
   const imageVariant = {
@@ -17,7 +17,8 @@ export default function Card({ imgSrc,name, color,cardLogo,title }) {
 
   return (
     <div className="flex flex-col">
-    <div
+    <a href={link} target='_blank'>
+    <div  
     onMouseEnter={()=>setIsHovered(true)}
     onMouseLeave={()=>setIsHovered(false)}
     className="w-[313px] min-h-[556px] relative overflow-clip cursor-pointer">
@@ -45,6 +46,8 @@ export default function Card({ imgSrc,name, color,cardLogo,title }) {
       })}
       </motion.div>
     </div>
+    </a>
+
   <TextSection   title={title} isHovered={isHovered}/>
     </div>
   );
